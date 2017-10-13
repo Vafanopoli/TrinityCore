@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4BCBCE14-B47C-36A3-A359-CDA1622D0B2A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\TrinityCore.725\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Development/TrinityCore.725/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Development/TrinityCore.725 -BC:/Development/TrinityCore.725/build --check-stamp-file C:/Development/TrinityCore.725/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Development/TrinityCore.725/CMakeLists.txt;C:\Development\TrinityCore.725\CMakeLists.txt;C:\Development\TrinityCore.725\build\CMakeFiles\3.9.1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;C:\Development\TrinityCore.725\build\CMakeFiles\3.9.1\CMakeCCompiler.cmake;C:\Development\TrinityCore.725\build\CMakeFiles\3.9.1\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Development\TrinityCore.725\build\CMakeFiles\3.9.1\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFiles.cmake;C:\Development\TrinityCore.725\cmake\macros\ConfigureScripts.cmake;C:\Development\TrinityCore.725\cmake\options.cmake;C:\Development\TrinityCore.725\cmake\macros\CheckPlatform.cmake;C:\Development\TrinityCore.725\cmake\platform\win\settings.cmake;C:\Development\TrinityCore.725\cmake\compiler\msvc\settings.cmake;C:\Development\TrinityCore.725\cmake\macros\GroupSources.cmake;C:\Development\TrinityCore.725\cmake\macros\AutoCollect.cmake;C:\Development\TrinityCore.725\cmake\macros\FindPCHSupport.cmake;C:\Development\TrinityCore.725\cmake\macros\FindMySQL.cmake;C:\Development\TrinityCore.725\cmake\macros\FindGit.cmake;C:\Development\TrinityCore.725\cmake\macros\EnsureVersion.cmake;C:\Development\TrinityCore.725\cmake\genrev.cmake;C:\Development\TrinityCore.725\cmake\showoptions.cmake;C:\Development\TrinityCore.725\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Development\TrinityCore.725\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Development/TrinityCore.725/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Development/TrinityCore.725 -BC:/Development/TrinityCore.725/build --check-stamp-file C:/Development/TrinityCore.725/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Development/TrinityCore.725/CMakeLists.txt;C:\Development\TrinityCore.725\CMakeLists.txt;C:\Development\TrinityCore.725\build\CMakeFiles\3.9.1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;C:\Development\TrinityCore.725\build\CMakeFiles\3.9.1\CMakeCCompiler.cmake;C:\Development\TrinityCore.725\build\CMakeFiles\3.9.1\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Development\TrinityCore.725\build\CMakeFiles\3.9.1\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFiles.cmake;C:\Development\TrinityCore.725\cmake\macros\ConfigureScripts.cmake;C:\Development\TrinityCore.725\cmake\options.cmake;C:\Development\TrinityCore.725\cmake\macros\CheckPlatform.cmake;C:\Development\TrinityCore.725\cmake\platform\win\settings.cmake;C:\Development\TrinityCore.725\cmake\compiler\msvc\settings.cmake;C:\Development\TrinityCore.725\cmake\macros\GroupSources.cmake;C:\Development\TrinityCore.725\cmake\macros\AutoCollect.cmake;C:\Development\TrinityCore.725\cmake\macros\FindPCHSupport.cmake;C:\Development\TrinityCore.725\cmake\macros\FindMySQL.cmake;C:\Development\TrinityCore.725\cmake\macros\FindGit.cmake;C:\Development\TrinityCore.725\cmake\macros\EnsureVersion.cmake;C:\Development\TrinityCore.725\cmake\genrev.cmake;C:\Development\TrinityCore.725\cmake\showoptions.cmake;C:\Development\TrinityCore.725\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Development\TrinityCore.725\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Development/TrinityCore.725/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Development/TrinityCore.725 -BC:/Development/TrinityCore.725/build --check-stamp-file C:/Development/TrinityCore.725/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Development/TrinityCore.725/CMakeLists.txt;C:\Development\TrinityCore.725\CMakeLists.txt;C:\Development\TrinityCore.725\build\CMakeFiles\3.9.1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;C:\Development\TrinityCore.725\build\CMakeFiles\3.9.1\CMakeCCompiler.cmake;C:\Development\TrinityCore.725\build\CMakeFiles\3.9.1\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Development\TrinityCore.725\build\CMakeFiles\3.9.1\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFiles.cmake;C:\Development\TrinityCore.725\cmake\macros\ConfigureScripts.cmake;C:\Development\TrinityCore.725\cmake\options.cmake;C:\Development\TrinityCore.725\cmake\macros\CheckPlatform.cmake;C:\Development\TrinityCore.725\cmake\platform\win\settings.cmake;C:\Development\TrinityCore.725\cmake\compiler\msvc\settings.cmake;C:\Development\TrinityCore.725\cmake\macros\GroupSources.cmake;C:\Development\TrinityCore.725\cmake\macros\AutoCollect.cmake;C:\Development\TrinityCore.725\cmake\macros\FindPCHSupport.cmake;C:\Development\TrinityCore.725\cmake\macros\FindMySQL.cmake;C:\Development\TrinityCore.725\cmake\macros\FindGit.cmake;C:\Development\TrinityCore.725\cmake\macros\EnsureVersion.cmake;C:\Development\TrinityCore.725\cmake\genrev.cmake;C:\Development\TrinityCore.725\cmake\showoptions.cmake;C:\Development\TrinityCore.725\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Development\TrinityCore.725\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Development/TrinityCore.725/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Development/TrinityCore.725 -BC:/Development/TrinityCore.725/build --check-stamp-file C:/Development/TrinityCore.725/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Development/TrinityCore.725/CMakeLists.txt;C:\Development\TrinityCore.725\CMakeLists.txt;C:\Development\TrinityCore.725\build\CMakeFiles\3.9.1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;C:\Development\TrinityCore.725\build\CMakeFiles\3.9.1\CMakeCCompiler.cmake;C:\Development\TrinityCore.725\build\CMakeFiles\3.9.1\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Development\TrinityCore.725\build\CMakeFiles\3.9.1\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFiles.cmake;C:\Development\TrinityCore.725\cmake\macros\ConfigureScripts.cmake;C:\Development\TrinityCore.725\cmake\options.cmake;C:\Development\TrinityCore.725\cmake\macros\CheckPlatform.cmake;C:\Development\TrinityCore.725\cmake\platform\win\settings.cmake;C:\Development\TrinityCore.725\cmake\compiler\msvc\settings.cmake;C:\Development\TrinityCore.725\cmake\macros\GroupSources.cmake;C:\Development\TrinityCore.725\cmake\macros\AutoCollect.cmake;C:\Development\TrinityCore.725\cmake\macros\FindPCHSupport.cmake;C:\Development\TrinityCore.725\cmake\macros\FindMySQL.cmake;C:\Development\TrinityCore.725\cmake\macros\FindGit.cmake;C:\Development\TrinityCore.725\cmake\macros\EnsureVersion.cmake;C:\Development\TrinityCore.725\cmake\genrev.cmake;C:\Development\TrinityCore.725\cmake\showoptions.cmake;C:\Development\TrinityCore.725\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Development\TrinityCore.725\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\ZERO_CHECK.vcxproj">
+      <Project>{C9240DD7-6B43-3D5A-A14F-5DDB657DE412}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\dep\recastnavigation\Detour\Detour.vcxproj">
+      <Project>{7075E2AA-6DE5-30BD-8906-6AD54D21690D}</Project>
+      <Name>Detour</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\dep\recastnavigation\Recast\Recast.vcxproj">
+      <Project>{C6FAA101-B122-3C1F-886B-DB1FE17EF011}</Project>
+      <Name>Recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\server\bnetserver\bnetserver.vcxproj">
+      <Project>{0CFF6ED5-8B91-3C0C-A665-33C91C231C1B}</Project>
+      <Name>bnetserver</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\dep\bzip2\bzip2.vcxproj">
+      <Project>{FDCE7DBC-417D-36C8-8779-792BA17FE10B}</Project>
+      <Name>bzip2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\dep\CascLib\casc.vcxproj">
+      <Project>{4B096109-ABA5-3B8F-B0A0-B35B6CE6AC85}</Project>
+      <Name>casc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\common\common.vcxproj">
+      <Project>{D5F3E4DA-B364-3257-97DF-271CC92FEB7C}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\tools\connection_patcher\connection_patcher.vcxproj">
+      <Project>{A4C0EE19-08FC-3A3F-96CA-8A0CD90D0583}</Project>
+      <Name>connection_patcher</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\server\database\database.vcxproj">
+      <Project>{2C36EB0A-C78D-3D71-953E-02D7849F7F45}</Project>
+      <Name>database</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\tools\extractor_common\extractor_common.vcxproj">
+      <Project>{D139F742-C72E-325B-9C15-618AD3E9D799}</Project>
+      <Name>extractor_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\dep\fmt\fmt.vcxproj">
+      <Project>{5026F8E6-32F8-36FB-96AF-466B0BA9553D}</Project>
+      <Name>fmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\dep\g3dlite\g3dlib.vcxproj">
+      <Project>{A5CBC628-9C7C-3C36-881A-1A5640B079DB}</Project>
+      <Name>g3dlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\server\game\game.vcxproj">
+      <Project>{71215D83-53AA-30EF-B74C-1F1BAC9BFE22}</Project>
+      <Name>game</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\dep\gsoap\gsoap.vcxproj">
+      <Project>{4E87C806-5CF0-3CA2-91A0-AFE39B472B12}</Project>
+      <Name>gsoap</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\tools\map_extractor\mapextractor.vcxproj">
+      <Project>{B144F271-4B30-35B8-B575-9ED9C8C29F90}</Project>
+      <Name>mapextractor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\tools\mmaps_generator\mmaps_generator.vcxproj">
+      <Project>{B4C1B6A8-288B-3C84-B07B-FB4B24CBEC0B}</Project>
+      <Name>mmaps_generator</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\server\proto\proto.vcxproj">
+      <Project>{4FCD7747-3FB2-3F38-A504-3C61CCAAF609}</Project>
+      <Name>proto</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\dep\protobuf\protobuf.vcxproj">
+      <Project>{47C00245-D49F-3FE5-9B3A-6E5DF16287BD}</Project>
+      <Name>protobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\genrev\revision_data.h.vcxproj">
+      <Project>{EE67966C-9051-3464-969A-FFEEDD68E227}</Project>
+      <Name>revision_data.h</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\server\scripts\scripts.vcxproj">
+      <Project>{FAE6CB7A-CFEA-31C3-A440-6C0466A0C7F0}</Project>
+      <Name>scripts</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\server\shared\shared.vcxproj">
+      <Project>{24E18808-36A7-3143-9B7F-CCB0F4421F49}</Project>
+      <Name>shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\tools\vmap4_assembler\vmap4assembler.vcxproj">
+      <Project>{BFC954E2-33B8-3278-AAE7-B75BC1832394}</Project>
+      <Name>vmap4assembler</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\tools\vmap4_extractor\vmap4extractor.vcxproj">
+      <Project>{1FA2FD24-E528-37A4-9302-59225E22502E}</Project>
+      <Name>vmap4extractor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\server\worldserver\worldserver.vcxproj">
+      <Project>{7D9169E3-C9B1-31FB-9EFA-85F772C1141D}</Project>
+      <Name>worldserver</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\dep\zlib\zlib.vcxproj">
+      <Project>{AB66B84E-B435-3F37-9C7E-F9B6C065CD29}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

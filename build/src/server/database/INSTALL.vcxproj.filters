@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\TrinityCore.725\build\CMakeFiles\3bc357daa8e1f287dbe15322f2dd5d2c\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3CD1301C-A88E-34AD-ABB2-5F4897E42783}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

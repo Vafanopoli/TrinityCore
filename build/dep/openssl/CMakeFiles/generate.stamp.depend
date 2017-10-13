@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/Development/TrinityCore.725/dep/openssl/CMakeLists.txt
+C:/Development/TrinityCore.725/cmake/macros/FindOpenSSL.cmake
+C:/Development/TrinityCore.725/cmake/macros/EnsureVersion.cmake

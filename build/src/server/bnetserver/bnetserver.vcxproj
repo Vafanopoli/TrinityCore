@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0CFF6ED5-8B91-3C0C-A665-33C91C231C1B}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>bnetserver</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Development\TrinityCore.725\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bnetserver.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bnetserver</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Development\TrinityCore.725\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bnetserver.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bnetserver</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Development\TrinityCore.725\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bnetserver.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bnetserver</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Development\TrinityCore.725\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bnetserver.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bnetserver</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\src\server\bnetserver;$(SolutionDir)..\src\server\bnetserver\REST;$(SolutionDir)..\src\server\bnetserver\Server;$(SolutionDir)..\src\server\bnetserver\Services;$(SolutionDir)..\build\src\server\bnetserver;$(SolutionDir)..\src\server\shared;$(SolutionDir)..\src\server\shared\DataStores;$(SolutionDir)..\src\server\shared\Dynamic;$(SolutionDir)..\src\server\shared\Dynamic\LinkedReference;$(SolutionDir)..\src\server\shared\JSON;$(SolutionDir)..\src\server\shared\Networking;$(SolutionDir)..\src\server\shared\Packets;$(SolutionDir)..\src\server\shared\Realm;$(SolutionDir)..\src\server\database;$(SolutionDir)..\src\server\database\Database;$(SolutionDir)..\src\server\database\Database\Implementation;$(SolutionDir)..\src\server\database\Logging;$(SolutionDir)..\src\server\database\Updater;$(SolutionDir);$(SolutionDir)..\src\common;$(SolutionDir)..\src\common\Collision;$(SolutionDir)..\src\common\Collision\Management;$(SolutionDir)..\src\common\Collision\Maps;$(SolutionDir)..\src\common\Collision\Models;$(SolutionDir)..\src\common\Configuration;$(SolutionDir)..\src\common\Cryptography;$(SolutionDir)..\src\common\Cryptography\Authentication;$(SolutionDir)..\src\common\DataStores;$(SolutionDir)..\src\common\Debugging;$(SolutionDir)..\src\common\Logging;$(SolutionDir)..\src\common\Metric;$(SolutionDir)..\src\common\Platform;$(SolutionDir)..\src\common\Threading;$(SolutionDir)..\src\common\Utilities;$(SolutionDir)..\..\boost;$(SolutionDir)..\dep\fmt;$(SolutionDir)..\dep\g3dlite\include;$(SolutionDir)..\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.7\include;C:\Development\TrinityCore.725\dep\rapidjson;C:\Development\TrinityCore.725\src\server\proto;C:\Development\TrinityCore.725\src\server\proto\Client;C:\Development\TrinityCore.725\src\server\proto\Client\client;C:\Development\TrinityCore.725\src\server\proto\Client\client\v1;C:\Development\TrinityCore.725\src\server\proto\Client\global_extensions;C:\Development\TrinityCore.725\src\server\proto\Login;C:\Development\TrinityCore.725\src\server\proto\RealmList;C:\Development\TrinityCore.725\dep\protobuf\src;C:\Development\TrinityCore.725\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew /Zm500</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4351;4091;4996;4355;4244;4985;4267;4619;4512</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>bnetPCH.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>bnetPCH.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_BUILD_DIRECTIVE="$(ConfigurationName)";_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NO_CORE_FUNCS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_NO_CXX11_SCOPED_ENUMS;RAPIDJSON_HAS_STDSTRING;RAPIDJSON_SSE2;RAPIDJSON_48BITPOINTER_OPTIMIZATION=0;RAPIDJSON_ASSERT=WPAssert;WITH_OPENSSL;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NO_CORE_FUNCS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_NO_CXX11_SCOPED_ENUMS;RAPIDJSON_HAS_STDSTRING;RAPIDJSON_SSE2;RAPIDJSON_48BITPOINTER_OPTIMIZATION=0;RAPIDJSON_ASSERT=WPAssert;WITH_OPENSSL;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\bnetserver\REST;C:\Development\TrinityCore.725\src\server\bnetserver\Server;C:\Development\TrinityCore.725\src\server\bnetserver\Services;C:\Development\TrinityCore.725\build\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\shared;C:\Development\TrinityCore.725\src\server\shared\DataStores;C:\Development\TrinityCore.725\src\server\shared\Dynamic;C:\Development\TrinityCore.725\src\server\shared\Dynamic\LinkedReference;C:\Development\TrinityCore.725\src\server\shared\JSON;C:\Development\TrinityCore.725\src\server\shared\Networking;C:\Development\TrinityCore.725\src\server\shared\Packets;C:\Development\TrinityCore.725\src\server\shared\Realm;C:\Development\TrinityCore.725\src\server\database;C:\Development\TrinityCore.725\src\server\database\Database;C:\Development\TrinityCore.725\src\server\database\Database\Implementation;C:\Development\TrinityCore.725\src\server\database\Logging;C:\Development\TrinityCore.725\src\server\database\Updater;C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.7\include;C:\Development\TrinityCore.725\dep\rapidjson;C:\Development\TrinityCore.725\src\server\proto;C:\Development\TrinityCore.725\src\server\proto\Client;C:\Development\TrinityCore.725\src\server\proto\Client\client;C:\Development\TrinityCore.725\src\server\proto\Client\client\v1;C:\Development\TrinityCore.725\src\server\proto\Client\global_extensions;C:\Development\TrinityCore.725\src\server\proto\Login;C:\Development\TrinityCore.725\src\server\proto\RealmList;C:\Development\TrinityCore.725\dep\protobuf\src;C:\Development\TrinityCore.725\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\bnetserver\REST;C:\Development\TrinityCore.725\src\server\bnetserver\Server;C:\Development\TrinityCore.725\src\server\bnetserver\Services;C:\Development\TrinityCore.725\build\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\shared;C:\Development\TrinityCore.725\src\server\shared\DataStores;C:\Development\TrinityCore.725\src\server\shared\Dynamic;C:\Development\TrinityCore.725\src\server\shared\Dynamic\LinkedReference;C:\Development\TrinityCore.725\src\server\shared\JSON;C:\Development\TrinityCore.725\src\server\shared\Networking;C:\Development\TrinityCore.725\src\server\shared\Packets;C:\Development\TrinityCore.725\src\server\shared\Realm;C:\Development\TrinityCore.725\src\server\database;C:\Development\TrinityCore.725\src\server\database\Database;C:\Development\TrinityCore.725\src\server\database\Database\Implementation;C:\Development\TrinityCore.725\src\server\database\Logging;C:\Development\TrinityCore.725\src\server\database\Updater;C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.7\include;C:\Development\TrinityCore.725\dep\rapidjson;C:\Development\TrinityCore.725\src\server\proto;C:\Development\TrinityCore.725\src\server\proto\Client;C:\Development\TrinityCore.725\src\server\proto\Client\client;C:\Development\TrinityCore.725\src\server\proto\Client\client\v1;C:\Development\TrinityCore.725\src\server\proto\Client\global_extensions;C:\Development\TrinityCore.725\src\server\proto\Login;C:\Development\TrinityCore.725\src\server\proto\RealmList;C:\Development\TrinityCore.725\dep\protobuf\src;C:\Development\TrinityCore.725\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Development/TrinityCore.725/src/server/bnetserver/bnetserver.conf.dist C:/Development/TrinityCore.725/build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Development/TrinityCore.725/src/server/bnetserver/bnetserver.cert.pem C:/Development/TrinityCore.725/build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Development/TrinityCore.725/src/server/bnetserver/bnetserver.key.pem C:/Development/TrinityCore.725/build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\shared\Debug\shared.lib;..\database\Debug\database.lib;C:\Program Files\MySQL\MySQL Server 5.7\lib\libmysql.lib;..\proto\Debug\proto.lib;..\..\common\Debug\common.lib;$(SolutionDir)..\..\boost\lib\libboost_system-vc141-mt-gd-1_66.lib;$(SolutionDir)..\..\boost\lib\libboost_filesystem-vc141-mt-gd-1_66.lib;$(SolutionDir)..\..\boost\lib\libboost_thread-vc141-mt-gd-1_66.lib;$(SolutionDir)..\..\boost\lib\libboost_program_options-vc141-mt-gd-1_66.lib;$(SolutionDir)..\..\boost\lib\libboost_iostreams-vc141-mt-gd-1_66.lib;..\..\..\dep\fmt\Debug\fmt.lib;..\..\..\dep\g3dlite\Debug\g3dlib.lib;..\..\..\dep\recastnavigation\Detour\Debug\Detour.lib;..\..\..\dep\protobuf\Debug\protobuf.lib;..\..\..\dep\zlib\Debug\zlib.lib;..\..\..\dep\gsoap\Debug\gsoap.lib;C:\OpenSSL-1.0.2-Win64\lib\VC\ssleay32MDd.lib;C:\OpenSSL-1.0.2-Win64\lib\VC\libeay32MDd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Development/TrinityCore.725/build/src/server/bnetserver/Debug/bnetserver.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Development/TrinityCore.725/build/bin/Debug/bnetserver.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\bnetserver\REST;C:\Development\TrinityCore.725\src\server\bnetserver\Server;C:\Development\TrinityCore.725\src\server\bnetserver\Services;C:\Development\TrinityCore.725\build\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\shared;C:\Development\TrinityCore.725\src\server\shared\DataStores;C:\Development\TrinityCore.725\src\server\shared\Dynamic;C:\Development\TrinityCore.725\src\server\shared\Dynamic\LinkedReference;C:\Development\TrinityCore.725\src\server\shared\JSON;C:\Development\TrinityCore.725\src\server\shared\Networking;C:\Development\TrinityCore.725\src\server\shared\Packets;C:\Development\TrinityCore.725\src\server\shared\Realm;C:\Development\TrinityCore.725\src\server\database;C:\Development\TrinityCore.725\src\server\database\Database;C:\Development\TrinityCore.725\src\server\database\Database\Implementation;C:\Development\TrinityCore.725\src\server\database\Logging;C:\Development\TrinityCore.725\src\server\database\Updater;C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.7\include;C:\Development\TrinityCore.725\dep\rapidjson;C:\Development\TrinityCore.725\src\server\proto;C:\Development\TrinityCore.725\src\server\proto\Client;C:\Development\TrinityCore.725\src\server\proto\Client\client;C:\Development\TrinityCore.725\src\server\proto\Client\client\v1;C:\Development\TrinityCore.725\src\server\proto\Client\global_extensions;C:\Development\TrinityCore.725\src\server\proto\Login;C:\Development\TrinityCore.725\src\server\proto\RealmList;C:\Development\TrinityCore.725\dep\protobuf\src;C:\Development\TrinityCore.725\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew /Zm500</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4351;4091;4996;4355;4244;4985;4267;4619;4512</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>bnetPCH.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>bnetPCH.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_BUILD_DIRECTIVE="$(ConfigurationName)";_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NO_CORE_FUNCS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_NO_CXX11_SCOPED_ENUMS;RAPIDJSON_HAS_STDSTRING;RAPIDJSON_SSE2;RAPIDJSON_48BITPOINTER_OPTIMIZATION=0;RAPIDJSON_ASSERT=WPAssert;WITH_OPENSSL;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NO_CORE_FUNCS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_NO_CXX11_SCOPED_ENUMS;RAPIDJSON_HAS_STDSTRING;RAPIDJSON_SSE2;RAPIDJSON_48BITPOINTER_OPTIMIZATION=0;RAPIDJSON_ASSERT=WPAssert;WITH_OPENSSL;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\bnetserver\REST;C:\Development\TrinityCore.725\src\server\bnetserver\Server;C:\Development\TrinityCore.725\src\server\bnetserver\Services;C:\Development\TrinityCore.725\build\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\shared;C:\Development\TrinityCore.725\src\server\shared\DataStores;C:\Development\TrinityCore.725\src\server\shared\Dynamic;C:\Development\TrinityCore.725\src\server\shared\Dynamic\LinkedReference;C:\Development\TrinityCore.725\src\server\shared\JSON;C:\Development\TrinityCore.725\src\server\shared\Networking;C:\Development\TrinityCore.725\src\server\shared\Packets;C:\Development\TrinityCore.725\src\server\shared\Realm;C:\Development\TrinityCore.725\src\server\database;C:\Development\TrinityCore.725\src\server\database\Database;C:\Development\TrinityCore.725\src\server\database\Database\Implementation;C:\Development\TrinityCore.725\src\server\database\Logging;C:\Development\TrinityCore.725\src\server\database\Updater;C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.7\include;C:\Development\TrinityCore.725\dep\rapidjson;C:\Development\TrinityCore.725\src\server\proto;C:\Development\TrinityCore.725\src\server\proto\Client;C:\Development\TrinityCore.725\src\server\proto\Client\client;C:\Development\TrinityCore.725\src\server\proto\Client\client\v1;C:\Development\TrinityCore.725\src\server\proto\Client\global_extensions;C:\Development\TrinityCore.725\src\server\proto\Login;C:\Development\TrinityCore.725\src\server\proto\RealmList;C:\Development\TrinityCore.725\dep\protobuf\src;C:\Development\TrinityCore.725\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\bnetserver\REST;C:\Development\TrinityCore.725\src\server\bnetserver\Server;C:\Development\TrinityCore.725\src\server\bnetserver\Services;C:\Development\TrinityCore.725\build\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\shared;C:\Development\TrinityCore.725\src\server\shared\DataStores;C:\Development\TrinityCore.725\src\server\shared\Dynamic;C:\Development\TrinityCore.725\src\server\shared\Dynamic\LinkedReference;C:\Development\TrinityCore.725\src\server\shared\JSON;C:\Development\TrinityCore.725\src\server\shared\Networking;C:\Development\TrinityCore.725\src\server\shared\Packets;C:\Development\TrinityCore.725\src\server\shared\Realm;C:\Development\TrinityCore.725\src\server\database;C:\Development\TrinityCore.725\src\server\database\Database;C:\Development\TrinityCore.725\src\server\database\Database\Implementation;C:\Development\TrinityCore.725\src\server\database\Logging;C:\Development\TrinityCore.725\src\server\database\Updater;C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.7\include;C:\Development\TrinityCore.725\dep\rapidjson;C:\Development\TrinityCore.725\src\server\proto;C:\Development\TrinityCore.725\src\server\proto\Client;C:\Development\TrinityCore.725\src\server\proto\Client\client;C:\Development\TrinityCore.725\src\server\proto\Client\client\v1;C:\Development\TrinityCore.725\src\server\proto\Client\global_extensions;C:\Development\TrinityCore.725\src\server\proto\Login;C:\Development\TrinityCore.725\src\server\proto\RealmList;C:\Development\TrinityCore.725\dep\protobuf\src;C:\Development\TrinityCore.725\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Development/TrinityCore.725/src/server/bnetserver/bnetserver.conf.dist C:/Development/TrinityCore.725/build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Development/TrinityCore.725/src/server/bnetserver/bnetserver.cert.pem C:/Development/TrinityCore.725/build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Development/TrinityCore.725/src/server/bnetserver/bnetserver.key.pem C:/Development/TrinityCore.725/build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\shared\Release\shared.lib;..\database\Release\database.lib;C:\Program Files\MySQL\MySQL Server 5.7\lib\libmysql.lib;..\proto\Release\proto.lib;..\..\common\Release\common.lib;F:\Development\boost_1_65_1\stage\lib\libboost_system-vc141-mt-1_66.lib;F:\Development\boost_1_65_1\stage\lib\libboost_filesystem-vc141-mt-1_66.lib;F:\Development\boost_1_65_1\stage\lib\libboost_thread-vc141-mt-1_66.lib;F:\Development\boost_1_65_1\stage\lib\libboost_program_options-vc141-mt-1_66.lib;F:\Development\boost_1_65_1\stage\lib\libboost_iostreams-vc141-mt-1_66.lib;..\..\..\dep\fmt\Release\fmt.lib;..\..\..\dep\g3dlite\Release\g3dlib.lib;..\..\..\dep\recastnavigation\Detour\Release\Detour.lib;..\..\..\dep\protobuf\Release\protobuf.lib;..\..\..\dep\zlib\Release\zlib.lib;..\..\..\dep\gsoap\Release\gsoap.lib;C:\OpenSSL-1.0.2-Win64\lib\VC\ssleay32MD.lib;C:\OpenSSL-1.0.2-Win64\lib\VC\libeay32MD.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Development/TrinityCore.725/build/src/server/bnetserver/Release/bnetserver.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Development/TrinityCore.725/build/bin/Release/bnetserver.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\bnetserver\REST;C:\Development\TrinityCore.725\src\server\bnetserver\Server;C:\Development\TrinityCore.725\src\server\bnetserver\Services;C:\Development\TrinityCore.725\build\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\shared;C:\Development\TrinityCore.725\src\server\shared\DataStores;C:\Development\TrinityCore.725\src\server\shared\Dynamic;C:\Development\TrinityCore.725\src\server\shared\Dynamic\LinkedReference;C:\Development\TrinityCore.725\src\server\shared\JSON;C:\Development\TrinityCore.725\src\server\shared\Networking;C:\Development\TrinityCore.725\src\server\shared\Packets;C:\Development\TrinityCore.725\src\server\shared\Realm;C:\Development\TrinityCore.725\src\server\database;C:\Development\TrinityCore.725\src\server\database\Database;C:\Development\TrinityCore.725\src\server\database\Database\Implementation;C:\Development\TrinityCore.725\src\server\database\Logging;C:\Development\TrinityCore.725\src\server\database\Updater;C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.7\include;C:\Development\TrinityCore.725\dep\rapidjson;C:\Development\TrinityCore.725\src\server\proto;C:\Development\TrinityCore.725\src\server\proto\Client;C:\Development\TrinityCore.725\src\server\proto\Client\client;C:\Development\TrinityCore.725\src\server\proto\Client\client\v1;C:\Development\TrinityCore.725\src\server\proto\Client\global_extensions;C:\Development\TrinityCore.725\src\server\proto\Login;C:\Development\TrinityCore.725\src\server\proto\RealmList;C:\Development\TrinityCore.725\dep\protobuf\src;C:\Development\TrinityCore.725\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew /Zm500</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4351;4091;4996;4355;4244;4985;4267;4619;4512</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>bnetPCH.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>bnetPCH.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_BUILD_DIRECTIVE="$(ConfigurationName)";_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NO_CORE_FUNCS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_NO_CXX11_SCOPED_ENUMS;RAPIDJSON_HAS_STDSTRING;RAPIDJSON_SSE2;RAPIDJSON_48BITPOINTER_OPTIMIZATION=0;RAPIDJSON_ASSERT=WPAssert;WITH_OPENSSL;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NO_CORE_FUNCS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_NO_CXX11_SCOPED_ENUMS;RAPIDJSON_HAS_STDSTRING;RAPIDJSON_SSE2;RAPIDJSON_48BITPOINTER_OPTIMIZATION=0;RAPIDJSON_ASSERT=WPAssert;WITH_OPENSSL;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\bnetserver\REST;C:\Development\TrinityCore.725\src\server\bnetserver\Server;C:\Development\TrinityCore.725\src\server\bnetserver\Services;C:\Development\TrinityCore.725\build\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\shared;C:\Development\TrinityCore.725\src\server\shared\DataStores;C:\Development\TrinityCore.725\src\server\shared\Dynamic;C:\Development\TrinityCore.725\src\server\shared\Dynamic\LinkedReference;C:\Development\TrinityCore.725\src\server\shared\JSON;C:\Development\TrinityCore.725\src\server\shared\Networking;C:\Development\TrinityCore.725\src\server\shared\Packets;C:\Development\TrinityCore.725\src\server\shared\Realm;C:\Development\TrinityCore.725\src\server\database;C:\Development\TrinityCore.725\src\server\database\Database;C:\Development\TrinityCore.725\src\server\database\Database\Implementation;C:\Development\TrinityCore.725\src\server\database\Logging;C:\Development\TrinityCore.725\src\server\database\Updater;C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.7\include;C:\Development\TrinityCore.725\dep\rapidjson;C:\Development\TrinityCore.725\src\server\proto;C:\Development\TrinityCore.725\src\server\proto\Client;C:\Development\TrinityCore.725\src\server\proto\Client\client;C:\Development\TrinityCore.725\src\server\proto\Client\client\v1;C:\Development\TrinityCore.725\src\server\proto\Client\global_extensions;C:\Development\TrinityCore.725\src\server\proto\Login;C:\Development\TrinityCore.725\src\server\proto\RealmList;C:\Development\TrinityCore.725\dep\protobuf\src;C:\Development\TrinityCore.725\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\bnetserver\REST;C:\Development\TrinityCore.725\src\server\bnetserver\Server;C:\Development\TrinityCore.725\src\server\bnetserver\Services;C:\Development\TrinityCore.725\build\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\shared;C:\Development\TrinityCore.725\src\server\shared\DataStores;C:\Development\TrinityCore.725\src\server\shared\Dynamic;C:\Development\TrinityCore.725\src\server\shared\Dynamic\LinkedReference;C:\Development\TrinityCore.725\src\server\shared\JSON;C:\Development\TrinityCore.725\src\server\shared\Networking;C:\Development\TrinityCore.725\src\server\shared\Packets;C:\Development\TrinityCore.725\src\server\shared\Realm;C:\Development\TrinityCore.725\src\server\database;C:\Development\TrinityCore.725\src\server\database\Database;C:\Development\TrinityCore.725\src\server\database\Database\Implementation;C:\Development\TrinityCore.725\src\server\database\Logging;C:\Development\TrinityCore.725\src\server\database\Updater;C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.7\include;C:\Development\TrinityCore.725\dep\rapidjson;C:\Development\TrinityCore.725\src\server\proto;C:\Development\TrinityCore.725\src\server\proto\Client;C:\Development\TrinityCore.725\src\server\proto\Client\client;C:\Development\TrinityCore.725\src\server\proto\Client\client\v1;C:\Development\TrinityCore.725\src\server\proto\Client\global_extensions;C:\Development\TrinityCore.725\src\server\proto\Login;C:\Development\TrinityCore.725\src\server\proto\RealmList;C:\Development\TrinityCore.725\dep\protobuf\src;C:\Development\TrinityCore.725\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Development/TrinityCore.725/src/server/bnetserver/bnetserver.conf.dist C:/Development/TrinityCore.725/build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Development/TrinityCore.725/src/server/bnetserver/bnetserver.cert.pem C:/Development/TrinityCore.725/build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Development/TrinityCore.725/src/server/bnetserver/bnetserver.key.pem C:/Development/TrinityCore.725/build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\shared\MinSizeRel\shared.lib;..\database\MinSizeRel\database.lib;C:\Program Files\MySQL\MySQL Server 5.7\lib\libmysql.lib;..\proto\MinSizeRel\proto.lib;..\..\common\MinSizeRel\common.lib;F:\Development\boost_1_65_1\stage\lib\libboost_system-vc141-mt-1_66.lib;F:\Development\boost_1_65_1\stage\lib\libboost_filesystem-vc141-mt-1_66.lib;F:\Development\boost_1_65_1\stage\lib\libboost_thread-vc141-mt-1_66.lib;F:\Development\boost_1_65_1\stage\lib\libboost_program_options-vc141-mt-1_66.lib;F:\Development\boost_1_65_1\stage\lib\libboost_iostreams-vc141-mt-1_66.lib;..\..\..\dep\fmt\MinSizeRel\fmt.lib;..\..\..\dep\g3dlite\MinSizeRel\g3dlib.lib;..\..\..\dep\recastnavigation\Detour\MinSizeRel\Detour.lib;..\..\..\dep\protobuf\MinSizeRel\protobuf.lib;..\..\..\dep\zlib\MinSizeRel\zlib.lib;..\..\..\dep\gsoap\MinSizeRel\gsoap.lib;C:\OpenSSL-1.0.2-Win64\lib\VC\ssleay32MD.lib;C:\OpenSSL-1.0.2-Win64\lib\VC\libeay32MD.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Development/TrinityCore.725/build/src/server/bnetserver/MinSizeRel/bnetserver.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Development/TrinityCore.725/build/bin/MinSizeRel/bnetserver.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\bnetserver\REST;C:\Development\TrinityCore.725\src\server\bnetserver\Server;C:\Development\TrinityCore.725\src\server\bnetserver\Services;C:\Development\TrinityCore.725\build\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\shared;C:\Development\TrinityCore.725\src\server\shared\DataStores;C:\Development\TrinityCore.725\src\server\shared\Dynamic;C:\Development\TrinityCore.725\src\server\shared\Dynamic\LinkedReference;C:\Development\TrinityCore.725\src\server\shared\JSON;C:\Development\TrinityCore.725\src\server\shared\Networking;C:\Development\TrinityCore.725\src\server\shared\Packets;C:\Development\TrinityCore.725\src\server\shared\Realm;C:\Development\TrinityCore.725\src\server\database;C:\Development\TrinityCore.725\src\server\database\Database;C:\Development\TrinityCore.725\src\server\database\Database\Implementation;C:\Development\TrinityCore.725\src\server\database\Logging;C:\Development\TrinityCore.725\src\server\database\Updater;C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.7\include;C:\Development\TrinityCore.725\dep\rapidjson;C:\Development\TrinityCore.725\src\server\proto;C:\Development\TrinityCore.725\src\server\proto\Client;C:\Development\TrinityCore.725\src\server\proto\Client\client;C:\Development\TrinityCore.725\src\server\proto\Client\client\v1;C:\Development\TrinityCore.725\src\server\proto\Client\global_extensions;C:\Development\TrinityCore.725\src\server\proto\Login;C:\Development\TrinityCore.725\src\server\proto\RealmList;C:\Development\TrinityCore.725\dep\protobuf\src;C:\Development\TrinityCore.725\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew /Zm500</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4351;4091;4996;4355;4244;4985;4267;4619;4512</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>bnetPCH.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>bnetPCH.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_BUILD_DIRECTIVE="$(ConfigurationName)";_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NO_CORE_FUNCS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_NO_CXX11_SCOPED_ENUMS;RAPIDJSON_HAS_STDSTRING;RAPIDJSON_SSE2;RAPIDJSON_48BITPOINTER_OPTIMIZATION=0;RAPIDJSON_ASSERT=WPAssert;WITH_OPENSSL;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NO_CORE_FUNCS;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_NO_CXX11_SCOPED_ENUMS;RAPIDJSON_HAS_STDSTRING;RAPIDJSON_SSE2;RAPIDJSON_48BITPOINTER_OPTIMIZATION=0;RAPIDJSON_ASSERT=WPAssert;WITH_OPENSSL;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\bnetserver\REST;C:\Development\TrinityCore.725\src\server\bnetserver\Server;C:\Development\TrinityCore.725\src\server\bnetserver\Services;C:\Development\TrinityCore.725\build\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\shared;C:\Development\TrinityCore.725\src\server\shared\DataStores;C:\Development\TrinityCore.725\src\server\shared\Dynamic;C:\Development\TrinityCore.725\src\server\shared\Dynamic\LinkedReference;C:\Development\TrinityCore.725\src\server\shared\JSON;C:\Development\TrinityCore.725\src\server\shared\Networking;C:\Development\TrinityCore.725\src\server\shared\Packets;C:\Development\TrinityCore.725\src\server\shared\Realm;C:\Development\TrinityCore.725\src\server\database;C:\Development\TrinityCore.725\src\server\database\Database;C:\Development\TrinityCore.725\src\server\database\Database\Implementation;C:\Development\TrinityCore.725\src\server\database\Logging;C:\Development\TrinityCore.725\src\server\database\Updater;C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.7\include;C:\Development\TrinityCore.725\dep\rapidjson;C:\Development\TrinityCore.725\src\server\proto;C:\Development\TrinityCore.725\src\server\proto\Client;C:\Development\TrinityCore.725\src\server\proto\Client\client;C:\Development\TrinityCore.725\src\server\proto\Client\client\v1;C:\Development\TrinityCore.725\src\server\proto\Client\global_extensions;C:\Development\TrinityCore.725\src\server\proto\Login;C:\Development\TrinityCore.725\src\server\proto\RealmList;C:\Development\TrinityCore.725\dep\protobuf\src;C:\Development\TrinityCore.725\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\bnetserver\REST;C:\Development\TrinityCore.725\src\server\bnetserver\Server;C:\Development\TrinityCore.725\src\server\bnetserver\Services;C:\Development\TrinityCore.725\build\src\server\bnetserver;C:\Development\TrinityCore.725\src\server\shared;C:\Development\TrinityCore.725\src\server\shared\DataStores;C:\Development\TrinityCore.725\src\server\shared\Dynamic;C:\Development\TrinityCore.725\src\server\shared\Dynamic\LinkedReference;C:\Development\TrinityCore.725\src\server\shared\JSON;C:\Development\TrinityCore.725\src\server\shared\Networking;C:\Development\TrinityCore.725\src\server\shared\Packets;C:\Development\TrinityCore.725\src\server\shared\Realm;C:\Development\TrinityCore.725\src\server\database;C:\Development\TrinityCore.725\src\server\database\Database;C:\Development\TrinityCore.725\src\server\database\Database\Implementation;C:\Development\TrinityCore.725\src\server\database\Logging;C:\Development\TrinityCore.725\src\server\database\Updater;C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;C:\Program Files\MySQL\MySQL Server 5.7\include;C:\Development\TrinityCore.725\dep\rapidjson;C:\Development\TrinityCore.725\src\server\proto;C:\Development\TrinityCore.725\src\server\proto\Client;C:\Development\TrinityCore.725\src\server\proto\Client\client;C:\Development\TrinityCore.725\src\server\proto\Client\client\v1;C:\Development\TrinityCore.725\src\server\proto\Client\global_extensions;C:\Development\TrinityCore.725\src\server\proto\Login;C:\Development\TrinityCore.725\src\server\proto\RealmList;C:\Development\TrinityCore.725\dep\protobuf\src;C:\Development\TrinityCore.725\dep\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Development/TrinityCore.725/src/server/bnetserver/bnetserver.conf.dist C:/Development/TrinityCore.725/build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Development/TrinityCore.725/src/server/bnetserver/bnetserver.cert.pem C:/Development/TrinityCore.725/build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Development/TrinityCore.725/src/server/bnetserver/bnetserver.key.pem C:/Development/TrinityCore.725/build/bin/$(ConfigurationName)/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\shared\RelWithDebInfo\shared.lib;..\database\RelWithDebInfo\database.lib;C:\Program Files\MySQL\MySQL Server 5.7\lib\libmysql.lib;..\proto\RelWithDebInfo\proto.lib;..\..\common\RelWithDebInfo\common.lib;F:\Development\boost_1_65_1\stage\lib\libboost_system-vc141-mt-1_66.lib;F:\Development\boost_1_65_1\stage\lib\libboost_filesystem-vc141-mt-1_66.lib;F:\Development\boost_1_65_1\stage\lib\libboost_thread-vc141-mt-1_66.lib;F:\Development\boost_1_65_1\stage\lib\libboost_program_options-vc141-mt-1_66.lib;F:\Development\boost_1_65_1\stage\lib\libboost_iostreams-vc141-mt-1_66.lib;..\..\..\dep\fmt\RelWithDebInfo\fmt.lib;..\..\..\dep\g3dlite\RelWithDebInfo\g3dlib.lib;..\..\..\dep\recastnavigation\Detour\RelWithDebInfo\Detour.lib;..\..\..\dep\protobuf\RelWithDebInfo\protobuf.lib;..\..\..\dep\zlib\RelWithDebInfo\zlib.lib;..\..\..\dep\gsoap\RelWithDebInfo\gsoap.lib;C:\OpenSSL-1.0.2-Win64\lib\VC\ssleay32MD.lib;C:\OpenSSL-1.0.2-Win64\lib\VC\libeay32MD.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Development/TrinityCore.725/build/src/server/bnetserver/RelWithDebInfo/bnetserver.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Development/TrinityCore.725/build/bin/RelWithDebInfo/bnetserver.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\TrinityCore.725\src\server\bnetserver\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Development/TrinityCore.725/src/server/bnetserver/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Development/TrinityCore.725 -BC:/Development/TrinityCore.725/build --check-stamp-file C:/Development/TrinityCore.725/build/src/server/bnetserver/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Development/TrinityCore.725/src/server/bnetserver/CMakeLists.txt;C:\Development\TrinityCore.725\src\server\bnetserver\CMakeLists.txt;C:\Development\TrinityCore.725\src\server\bnetserver\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Development\TrinityCore.725\build\src\server\bnetserver\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Development/TrinityCore.725/src/server/bnetserver/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Development/TrinityCore.725 -BC:/Development/TrinityCore.725/build --check-stamp-file C:/Development/TrinityCore.725/build/src/server/bnetserver/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Development/TrinityCore.725/src/server/bnetserver/CMakeLists.txt;C:\Development\TrinityCore.725\src\server\bnetserver\CMakeLists.txt;C:\Development\TrinityCore.725\src\server\bnetserver\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Development\TrinityCore.725\build\src\server\bnetserver\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Development/TrinityCore.725/src/server/bnetserver/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Development/TrinityCore.725 -BC:/Development/TrinityCore.725/build --check-stamp-file C:/Development/TrinityCore.725/build/src/server/bnetserver/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Development/TrinityCore.725/src/server/bnetserver/CMakeLists.txt;C:\Development\TrinityCore.725\src\server\bnetserver\CMakeLists.txt;C:\Development\TrinityCore.725\src\server\bnetserver\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Development\TrinityCore.725\build\src\server\bnetserver\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Development/TrinityCore.725/src/server/bnetserver/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Development/TrinityCore.725 -BC:/Development/TrinityCore.725/build --check-stamp-file C:/Development/TrinityCore.725/build/src/server/bnetserver/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Development/TrinityCore.725/src/server/bnetserver/CMakeLists.txt;C:\Development\TrinityCore.725\src\server\bnetserver\CMakeLists.txt;C:\Development\TrinityCore.725\src\server\bnetserver\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Development\TrinityCore.725\build\src\server\bnetserver\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\bnetserver\PrecompiledHeaders\bnetPCH.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bnetPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bnetPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bnetPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bnetPCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\bnetserver\Main.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\bnetserver\resource.h" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\bnetserver\REST\LoginRESTService.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\bnetserver\REST\LoginRESTService.h" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\bnetserver\Server\Session.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\bnetserver\Server\SessionManager.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\bnetserver\Server\SslContext.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\bnetserver\Server\Session.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\bnetserver\Server\SessionManager.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\bnetserver\Server\SslContext.h" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\bnetserver\Services\AccountService.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\bnetserver\Services\AuthenticationService.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\bnetserver\Services\ConnectionService.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\bnetserver\Services\GameUtilitiesService.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\bnetserver\Services\ServiceDispatcher.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\bnetserver\Services\AccountService.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\bnetserver\Services\AuthenticationService.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\bnetserver\Services\ConnectionService.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\bnetserver\Services\GameUtilitiesService.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\bnetserver\Services\Service.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\bnetserver\Services\ServiceDispatcher.h" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Debugging\WheatyExceptionReport.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Debugging\WheatyExceptionReport.h" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Platform\ServiceWin32.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Platform\ServiceWin32.h" />
+    <ResourceCompile Include="C:\Development\TrinityCore.725\src\server\bnetserver\bnetserver.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\ZERO_CHECK.vcxproj">
+      <Project>{C9240DD7-6B43-3D5A-A14F-5DDB657DE412}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\dep\recastnavigation\Detour\Detour.vcxproj">
+      <Project>{7075E2AA-6DE5-30BD-8906-6AD54D21690D}</Project>
+      <Name>Detour</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\common\common.vcxproj">
+      <Project>{D5F3E4DA-B364-3257-97DF-271CC92FEB7C}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\server\database\database.vcxproj">
+      <Project>{2C36EB0A-C78D-3D71-953E-02D7849F7F45}</Project>
+      <Name>database</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\dep\fmt\fmt.vcxproj">
+      <Project>{5026F8E6-32F8-36FB-96AF-466B0BA9553D}</Project>
+      <Name>fmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\dep\g3dlite\g3dlib.vcxproj">
+      <Project>{A5CBC628-9C7C-3C36-881A-1A5640B079DB}</Project>
+      <Name>g3dlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\dep\gsoap\gsoap.vcxproj">
+      <Project>{4E87C806-5CF0-3CA2-91A0-AFE39B472B12}</Project>
+      <Name>gsoap</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\server\proto\proto.vcxproj">
+      <Project>{4FCD7747-3FB2-3F38-A504-3C61CCAAF609}</Project>
+      <Name>proto</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\dep\protobuf\protobuf.vcxproj">
+      <Project>{47C00245-D49F-3FE5-9B3A-6E5DF16287BD}</Project>
+      <Name>protobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\server\shared\shared.vcxproj">
+      <Project>{24E18808-36A7-3143-9B7F-CCB0F4421F49}</Project>
+      <Name>shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\dep\zlib\zlib.vcxproj">
+      <Project>{AB66B84E-B435-3F37-9C7E-F9B6C065CD29}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

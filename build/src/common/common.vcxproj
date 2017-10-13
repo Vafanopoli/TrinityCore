@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D5F3E4DA-B364-3257-97DF-271CC92FEB7C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>common</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Development\TrinityCore.725\build\src\common\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">common.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">common</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Development\TrinityCore.725\build\src\common\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">common.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">common</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Development\TrinityCore.725\build\src\common\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">common.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">common</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Development\TrinityCore.725\build\src\common\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">common.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">common</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)..\src\common;$(SolutionDir)..\src\common\Collision;$(SolutionDir)..\src\common\Collision\Management;$(SolutionDir)..\src\common\Collision\Maps;$(SolutionDir)..\src\common\Collision\Models;$(SolutionDir)..\src\common\Configuration;$(SolutionDir)..\src\common\Cryptography;$(SolutionDir)..\src\common\Cryptography\Authentication;$(SolutionDir)..\src\common\DataStores;$(SolutionDir)..\src\common\Debugging;$(SolutionDir)..\src\common\Logging;$(SolutionDir)..\src\common\Metric;$(SolutionDir)..\src\common\Platform;$(SolutionDir)..\src\common\Threading;$(SolutionDir)..\src\common\Utilities;$(SolutionDir)..\build\src\common;$(SolutionDir)..\dep\process;$(SolutionDir)..\..\boost;$(SolutionDir)..\dep\fmt;$(SolutionDir)..\dep\g3dlite\include;$(SolutionDir)..\dep\zlib;$(SolutionDir)..\dep\recastnavigation\Detour\Include;$(SolutionDir)..\dep\SFMT;$(SolutionDir)..\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;$(SolutionDir)..\dep\valgrind;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew /Zm500</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4351;4091;4996;4355;4244;4985;4267;4619;4512</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>commonPCH.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>commonPCH.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_BUILD_DIRECTIVE="$(ConfigurationName)";_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NO_CORE_FUNCS;TRINITY_API_EXPORT_COMMON;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_NO_CXX11_SCOPED_ENUMS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NO_CORE_FUNCS;TRINITY_API_EXPORT_COMMON;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_NO_CXX11_SCOPED_ENUMS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;C:\Development\TrinityCore.725\build\src\common;C:\Development\TrinityCore.725\dep\process;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;C:\Development\TrinityCore.725\build\src\common;C:\Development\TrinityCore.725\dep\process;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;C:\Development\TrinityCore.725\build\src\common;C:\Development\TrinityCore.725\dep\process;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew /Zm500</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4351;4091;4996;4355;4244;4985;4267;4619;4512</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>commonPCH.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>commonPCH.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_BUILD_DIRECTIVE="$(ConfigurationName)";_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NO_CORE_FUNCS;TRINITY_API_EXPORT_COMMON;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_NO_CXX11_SCOPED_ENUMS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NO_CORE_FUNCS;TRINITY_API_EXPORT_COMMON;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_NO_CXX11_SCOPED_ENUMS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;C:\Development\TrinityCore.725\build\src\common;C:\Development\TrinityCore.725\dep\process;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;C:\Development\TrinityCore.725\build\src\common;C:\Development\TrinityCore.725\dep\process;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;C:\Development\TrinityCore.725\build\src\common;C:\Development\TrinityCore.725\dep\process;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew /Zm500</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4351;4091;4996;4355;4244;4985;4267;4619;4512</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>commonPCH.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>commonPCH.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_BUILD_DIRECTIVE="$(ConfigurationName)";_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NO_CORE_FUNCS;TRINITY_API_EXPORT_COMMON;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_NO_CXX11_SCOPED_ENUMS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NO_CORE_FUNCS;TRINITY_API_EXPORT_COMMON;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_NO_CXX11_SCOPED_ENUMS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;C:\Development\TrinityCore.725\build\src\common;C:\Development\TrinityCore.725\dep\process;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;C:\Development\TrinityCore.725\build\src\common;C:\Development\TrinityCore.725\dep\process;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;C:\Development\TrinityCore.725\build\src\common;C:\Development\TrinityCore.725\dep\process;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew /Zm500</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4351;4091;4996;4355;4244;4985;4267;4619;4512</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>commonPCH.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>commonPCH.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_BUILD_DIRECTIVE="$(ConfigurationName)";_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NO_CORE_FUNCS;TRINITY_API_EXPORT_COMMON;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_NO_CXX11_SCOPED_ENUMS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_WIN32_WINNT=0x0601;WIN32_LEAN_AND_MEAN;NOMINMAX;_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NO_CORE_FUNCS;TRINITY_API_EXPORT_COMMON;BOOST_DATE_TIME_NO_LIB;BOOST_REGEX_NO_LIB;BOOST_CHRONO_NO_LIB;BOOST_NO_CXX11_SCOPED_ENUMS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;C:\Development\TrinityCore.725\build\src\common;C:\Development\TrinityCore.725\dep\process;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\TrinityCore.725\build;C:\Development\TrinityCore.725\src\common;C:\Development\TrinityCore.725\src\common\Collision;C:\Development\TrinityCore.725\src\common\Collision\Management;C:\Development\TrinityCore.725\src\common\Collision\Maps;C:\Development\TrinityCore.725\src\common\Collision\Models;C:\Development\TrinityCore.725\src\common\Configuration;C:\Development\TrinityCore.725\src\common\Cryptography;C:\Development\TrinityCore.725\src\common\Cryptography\Authentication;C:\Development\TrinityCore.725\src\common\DataStores;C:\Development\TrinityCore.725\src\common\Debugging;C:\Development\TrinityCore.725\src\common\Logging;C:\Development\TrinityCore.725\src\common\Metric;C:\Development\TrinityCore.725\src\common\Platform;C:\Development\TrinityCore.725\src\common\Threading;C:\Development\TrinityCore.725\src\common\Utilities;C:\Development\TrinityCore.725\build\src\common;C:\Development\TrinityCore.725\dep\process;F:\Development\boost_1_65_1;C:\Development\TrinityCore.725\dep\fmt;C:\Development\TrinityCore.725\dep\g3dlite\include;C:\Development\TrinityCore.725\dep\zlib;C:\Development\TrinityCore.725\dep\recastnavigation\Detour\Include;C:\Development\TrinityCore.725\dep\SFMT;C:\Development\TrinityCore.725\dep\utf8cpp;C:\OpenSSL-1.0.2-Win64\include;C:\Development\TrinityCore.725\dep\valgrind;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\TrinityCore.725\src\common\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Development/TrinityCore.725/src/common/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Development/TrinityCore.725 -BC:/Development/TrinityCore.725/build --check-stamp-file C:/Development/TrinityCore.725/build/src/common/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Development/TrinityCore.725/src/common/CMakeLists.txt;C:\Development\TrinityCore.725\src\common\CMakeLists.txt;C:\Development\TrinityCore.725\src\common\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Development\TrinityCore.725\build\src\common\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Development/TrinityCore.725/src/common/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Development/TrinityCore.725 -BC:/Development/TrinityCore.725/build --check-stamp-file C:/Development/TrinityCore.725/build/src/common/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Development/TrinityCore.725/src/common/CMakeLists.txt;C:\Development\TrinityCore.725\src\common\CMakeLists.txt;C:\Development\TrinityCore.725\src\common\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Development\TrinityCore.725\build\src\common\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Development/TrinityCore.725/src/common/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Development/TrinityCore.725 -BC:/Development/TrinityCore.725/build --check-stamp-file C:/Development/TrinityCore.725/build/src/common/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Development/TrinityCore.725/src/common/CMakeLists.txt;C:\Development\TrinityCore.725\src\common\CMakeLists.txt;C:\Development\TrinityCore.725\src\common\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Development\TrinityCore.725\build\src\common\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Development/TrinityCore.725/src/common/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Development/TrinityCore.725 -BC:/Development/TrinityCore.725/build --check-stamp-file C:/Development/TrinityCore.725/build/src/common/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Development/TrinityCore.725/src/common/CMakeLists.txt;C:\Development\TrinityCore.725\src\common\CMakeLists.txt;C:\Development\TrinityCore.725\src\common\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Development\TrinityCore.725\build\src\common\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\PrecompiledHeaders\commonPCH.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">commonPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">commonPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">commonPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">commonPCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Banner.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Common.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\GitRevision.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Banner.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Common.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\CompilerDefs.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Define.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\GitRevision.h" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Collision\BoundingIntervalHierarchy.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Collision\DynamicTree.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Collision\BoundingIntervalHierarchy.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Collision\BoundingIntervalHierarchyWrapper.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Collision\DynamicTree.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Collision\RegularGrid.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Collision\VMapDefinitions.h" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Collision\Management\MMapFactory.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Collision\Management\MMapManager.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Collision\Management\VMapFactory.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Collision\Management\VMapManager2.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Collision\Management\IVMapManager.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Collision\Management\MMapFactory.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Collision\Management\MMapManager.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Collision\Management\VMapFactory.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Collision\Management\VMapManager2.h" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Collision\Maps\MapTree.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Collision\Maps\TileAssembler.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Collision\Maps\MapDefines.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Collision\Maps\MapTree.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Collision\Maps\TileAssembler.h" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Collision\Models\GameObjectModel.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Collision\Models\ModelInstance.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Collision\Models\WorldModel.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Collision\Models\GameObjectModel.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Collision\Models\ModelInstance.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Collision\Models\WorldModel.h" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Configuration\BuiltInConfig.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Configuration\Config.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Configuration\BuiltInConfig.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Configuration\Config.h" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Cryptography\ARC4.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Cryptography\BigNumber.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Cryptography\HmacHash.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Cryptography\OpenSSLCrypto.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Cryptography\SHA1.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Cryptography\SHA256.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Cryptography\ARC4.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Cryptography\BigNumber.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Cryptography\HmacHash.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Cryptography\OpenSSLCrypto.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Cryptography\SHA1.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Cryptography\SHA256.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Cryptography\SessionKeyGeneration.h" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Cryptography\Authentication\PacketCrypt.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Cryptography\Authentication\WorldPacketCrypt.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Cryptography\Authentication\PacketCrypt.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Cryptography\Authentication\WorldPacketCrypt.h" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\DataStores\DB2FileLoader.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\DataStores\DB2Meta.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\DataStores\DB2FileLoader.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\DataStores\DB2Meta.h" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Logging\Appender.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Logging\AppenderConsole.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Logging\AppenderFile.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Logging\Log.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Logging\LogMessage.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Logging\LogOperation.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Logging\Logger.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Logging\Appender.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Logging\AppenderConsole.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Logging\AppenderFile.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Logging\Log.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Logging\LogCommon.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Logging\LogMessage.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Logging\LogOperation.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Logging\Logger.h" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Metric\Metric.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Metric\Metric.h" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Threading\ProcessPriority.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Threading\LockedQueue.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Threading\MPSCQueue.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Threading\ProcessPriority.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Threading\ProducerConsumerQueue.h" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Utilities\EventMap.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Utilities\EventProcessor.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Utilities\Random.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Utilities\StartProcess.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Utilities\TaskScheduler.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Utilities\Util.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Utilities\AsioHacksFwd.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Utilities\AsioHacksImpl.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Utilities\ByteConverter.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Utilities\Containers.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Utilities\Duration.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Utilities\EventMap.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Utilities\EventProcessor.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Utilities\Hash.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Utilities\IteratorPair.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Utilities\MessageBuffer.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Utilities\Optional.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Utilities\Random.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Utilities\Regex.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Utilities\StartProcess.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Utilities\StringFormat.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Utilities\TaskScheduler.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Utilities\Timer.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Utilities\Util.h" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Debugging\Errors.cpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Debugging\Errors.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\ZERO_CHECK.vcxproj">
+      <Project>{C9240DD7-6B43-3D5A-A14F-5DDB657DE412}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\dep\recastnavigation\Detour\Detour.vcxproj">
+      <Project>{7075E2AA-6DE5-30BD-8906-6AD54D21690D}</Project>
+      <Name>Detour</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\dep\fmt\fmt.vcxproj">
+      <Project>{5026F8E6-32F8-36FB-96AF-466B0BA9553D}</Project>
+      <Name>fmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\dep\g3dlite\g3dlib.vcxproj">
+      <Project>{A5CBC628-9C7C-3C36-881A-1A5640B079DB}</Project>
+      <Name>g3dlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\src\genrev\revision_data.h.vcxproj">
+      <Project>{EE67966C-9051-3464-969A-FFEEDD68E227}</Project>
+      <Name>revision_data.h</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\TrinityCore.725\build\dep\zlib\zlib.vcxproj">
+      <Project>{AB66B84E-B435-3F37-9C7E-F9B6C065CD29}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

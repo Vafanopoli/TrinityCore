@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+C:/Development/TrinityCore.725/dep/threads/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageMessage.cmake

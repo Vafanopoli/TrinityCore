@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\PrecompiledHeaders\databasePCH.cpp">
+      <Filter>PrecompiledHeaders</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Database\AdhocStatement.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Database\DatabaseEnv.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Database\DatabaseLoader.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Database\DatabaseWorker.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Database\DatabaseWorkerPool.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Database\Field.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Database\MySQLConnection.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Database\MySQLThreading.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Database\PreparedStatement.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Database\QueryCallback.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Database\QueryCallbackProcessor.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Database\QueryHolder.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Database\QueryResult.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Database\Transaction.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Database\Implementation\CharacterDatabase.cpp">
+      <Filter>Database\Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Database\Implementation\HotfixDatabase.cpp">
+      <Filter>Database\Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Database\Implementation\LoginDatabase.cpp">
+      <Filter>Database\Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Database\Implementation\WorldDatabase.cpp">
+      <Filter>Database\Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Logging\AppenderDB.cpp">
+      <Filter>Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Updater\DBUpdater.cpp">
+      <Filter>Updater</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\database\Updater\UpdateFetcher.cpp">
+      <Filter>Updater</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\AdhocStatement.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\DatabaseEnv.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\DatabaseEnvFwd.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\DatabaseLoader.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\DatabaseWorker.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\DatabaseWorkerPool.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\Field.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\MySQLConnection.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\MySQLThreading.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\PreparedStatement.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\QueryCallback.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\QueryCallbackProcessor.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\QueryHolder.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\QueryResult.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\SQLOperation.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\Transaction.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\Implementation\CharacterDatabase.h">
+      <Filter>Database\Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\Implementation\HotfixDatabase.h">
+      <Filter>Database\Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\Implementation\LoginDatabase.h">
+      <Filter>Database\Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Database\Implementation\WorldDatabase.h">
+      <Filter>Database\Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Logging\AppenderDB.h">
+      <Filter>Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Updater\DBUpdater.h">
+      <Filter>Updater</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\database\Updater\UpdateFetcher.h">
+      <Filter>Updater</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\TrinityCore.725\src\server\database\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Database">
+      <UniqueIdentifier>{E0FA9D81-BC5C-3EF6-906E-38497BAF95A1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logging">
+      <UniqueIdentifier>{B3E3472E-446D-3280-B4CC-DC1FE5C9673C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PrecompiledHeaders">
+      <UniqueIdentifier>{B4D22C76-BA32-30C1-B7CE-2F9A0F4B88D7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Updater">
+      <UniqueIdentifier>{14A5A03B-11DC-346B-91C4-159F1393981A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\Implementation">
+      <UniqueIdentifier>{8638D941-DF70-3F51-9A70-7E286296C082}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

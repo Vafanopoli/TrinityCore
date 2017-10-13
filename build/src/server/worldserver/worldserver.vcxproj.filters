@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\worldserver\PrecompiledHeaders\worldPCH.cpp">
+      <Filter>PrecompiledHeaders</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\worldserver\Main.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\worldserver\CommandLine\CliRunnable.cpp">
+      <Filter>CommandLine</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\worldserver\RemoteAccess\RASession.cpp">
+      <Filter>RemoteAccess</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\server\worldserver\TCSoap\TCSoap.cpp">
+      <Filter>TCSoap</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Debugging\WheatyExceptionReport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Platform\ServiceWin32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\worldserver\resource.h" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\worldserver\CommandLine\CliRunnable.h">
+      <Filter>CommandLine</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\worldserver\RemoteAccess\RASession.h">
+      <Filter>RemoteAccess</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\server\worldserver\TCSoap\TCSoap.h">
+      <Filter>TCSoap</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Debugging\WheatyExceptionReport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Platform\ServiceWin32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\TrinityCore.725\src\server\worldserver\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Development\TrinityCore.725\src\server\worldserver\worldserver.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9C3A8D7B-5299-3CFD-9427-AA434C4E828B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{99A2D21B-F0B7-3F4B-BEAB-8841E34D14ED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CommandLine">
+      <UniqueIdentifier>{C44D8BC9-7324-3081-83C4-3573ED9F069B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PrecompiledHeaders">
+      <UniqueIdentifier>{B4D22C76-BA32-30C1-B7CE-2F9A0F4B88D7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RemoteAccess">
+      <UniqueIdentifier>{B2F8E076-EF0D-3AFE-A67B-96E708B4CAD0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TCSoap">
+      <UniqueIdentifier>{0843E4FD-2534-3087-A80F-69CE91347365}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Development\TrinityCore.725\src\tools\connection_patcher\Helper.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\tools\connection_patcher\Patcher.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\tools\connection_patcher\Program.cpp" />
+    <ClCompile Include="C:\Development\TrinityCore.725\src\common\Debugging\WheatyExceptionReport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\tools\connection_patcher\Helper.hpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\tools\connection_patcher\Patcher.hpp" />
+    <ClInclude Include="C:\Development\TrinityCore.725\src\tools\connection_patcher\Constants\BinaryTypes.hpp">
+      <Filter>Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\tools\connection_patcher\Patches\Common.hpp">
+      <Filter>Patches</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\tools\connection_patcher\Patches\Mac.hpp">
+      <Filter>Patches</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\tools\connection_patcher\Patches\Windows.hpp">
+      <Filter>Patches</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\tools\connection_patcher\Patterns\Common.hpp">
+      <Filter>Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\tools\connection_patcher\Patterns\Mac.hpp">
+      <Filter>Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\tools\connection_patcher\Patterns\Windows.hpp">
+      <Filter>Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Development\TrinityCore.725\src\common\Debugging\WheatyExceptionReport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\TrinityCore.725\src\tools\connection_patcher\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9C3A8D7B-5299-3CFD-9427-AA434C4E828B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{99A2D21B-F0B7-3F4B-BEAB-8841E34D14ED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Constants">
+      <UniqueIdentifier>{65F512CF-27F2-3449-8FBC-B7E1FB47F17E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patches">
+      <UniqueIdentifier>{1B14B2D8-4CF1-3AD3-B024-719A24D1E571}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patterns">
+      <UniqueIdentifier>{BF4780DC-261D-3238-9B32-F90816765CFE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
