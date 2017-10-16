@@ -436,6 +436,9 @@ bool Player::Create(ObjectGuid::LowType guidlow, WorldPackets::Character::Charac
         return false;
     }
 
+	TC_LOG_TRACE("entities.player.cheat", "Player::Create: Account %u trying to create a character named '%s' with attributes: race(%u),class(%u),gender(%u),hair(%u),hairColor(%u),face(%u),faceHair(%u),skinColor(%u)",
+		GetSession()->GetAccountId(), m_name.c_str(), createInfo->Race, createInfo->Class, createInfo->Sex, createInfo->HairStyle, createInfo->HairColor, createInfo->Face, createInfo->FacialHairStyle, createInfo->Skin);
+
     if (!ValidateAppearance(createInfo->Race, createInfo->Class, createInfo->Sex, createInfo->HairStyle, createInfo->HairColor, createInfo->Face, createInfo->FacialHairStyle, createInfo->Skin, createInfo->CustomDisplay, true))
     {
         TC_LOG_ERROR("entities.player.cheat", "Player::Create: Possible hacking-attempt: Account %u tried creating a character named '%s' with invalid appearance attributes - refusing to do so",
