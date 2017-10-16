@@ -311,7 +311,7 @@ void WorldSession::HandleCharEnum(PreparedQueryResult result)
                 TC_LOG_ERROR("entities.player.loading", "Player %s has wrong Appearance values (Hair/Skin/Color), forcing recustomize", charInfo.Guid.ToString().c_str());
 
                 // Make sure customization always works properly - send all zeroes instead
-                charInfo.Skin = 0, charInfo.Face = 0, charInfo.HairStyle = 0, charInfo.HairColor = 0, charInfo.FacialHair = 0;
+                /*charInfo.Skin = 0, charInfo.Face = 0, charInfo.HairStyle = 0, charInfo.HairColor = 0, charInfo.FacialHair = 0;
 
                 if (!(charInfo.CustomizationFlag == CHAR_CUSTOMIZE_FLAG_CUSTOMIZE))
                 {
@@ -320,7 +320,7 @@ void WorldSession::HandleCharEnum(PreparedQueryResult result)
                     stmt->setUInt64(1, charInfo.Guid.GetCounter());
                     CharacterDatabase.Execute(stmt);
                     charInfo.CustomizationFlag = CHAR_CUSTOMIZE_FLAG_CUSTOMIZE;
-                }
+                }*/
             }
 
             // Do not allow locked characters to login
@@ -1470,7 +1470,7 @@ void WorldSession::HandleAlterAppearance(WorldPackets::Character::AlterApperance
         bs_facialHair->Data,
         bs_skinColor ? bs_skinColor->Data : _player->GetByteValue(PLAYER_BYTES, PLAYER_BYTES_OFFSET_SKIN_ID),
         customDisplay))
-        return;
+        //return;
 
     GameObject* go = _player->FindNearestGameObjectOfType(GAMEOBJECT_TYPE_BARBER_CHAIR, 5.0f);
     if (!go)
@@ -1553,8 +1553,8 @@ void WorldSession::HandleCharCustomizeCallback(std::shared_ptr<WorldPackets::Cha
     if (!Player::ValidateAppearance(plrRace, plrClass, plrGender, customizeInfo->HairStyleID, customizeInfo->HairColorID, customizeInfo->FaceID,
         customizeInfo->FacialHairStyleID, customizeInfo->SkinID, customizeInfo->CustomDisplay))
     {
-        SendCharCustomize(CHAR_CREATE_ERROR, customizeInfo.get());
-        return;
+        //SendCharCustomize(CHAR_CREATE_ERROR, customizeInfo.get());
+        //return;
     }
 
     if (!(atLoginFlags & AT_LOGIN_CUSTOMIZE))

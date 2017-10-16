@@ -17485,7 +17485,7 @@ bool Player::LoadFromDB(ObjectGuid guid, SQLQueryHolder *holder)
         customDisplay))
     {
         TC_LOG_ERROR("entities.player", "Player::LoadFromDB: Player (%s) has wrong Appearance values (Hair/Skin/Color), can't load.", guid.ToString().c_str());
-        return false;
+        //return false;
     }
 
     // set which actionbars the client has active - DO NOT REMOVE EVER AGAIN (can be changed though, if it does change fieldwise)
