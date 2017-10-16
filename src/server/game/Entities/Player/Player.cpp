@@ -27653,38 +27653,38 @@ bool Player::ValidateAppearance(uint8 race, uint8 class_, uint8 gender, uint8 ha
     if (!IsSectionValid(race, class_, gender, CharBaseSectionVariation::Skin, 0, skinColor, create))
         return false;
 
-	TC_LOG_ERROR("entities.player.cheat", "Player::Create: Account %u (%u) - Skin is good");
+	TC_LOG_ERROR("entities.player.cheat", "Player::Create: Skin is good");
 
     if (!IsSectionValid(race, class_, gender, CharBaseSectionVariation::Face, faceID, skinColor, create))
         return false;
 
-	TC_LOG_ERROR("entities.player.cheat", "Player::Create: Account %u (%u) - Face is good");
+	TC_LOG_ERROR("entities.player.cheat", "Player::Create: Face is good");
 	
 	if (!IsSectionValid(race, class_, gender, CharBaseSectionVariation::Hair, hairID, hairColor, create))
         return false;
 
-	TC_LOG_ERROR("entities.player.cheat", "Player::Create: Account %u (%u) - Hair is good");
+	TC_LOG_ERROR("entities.player.cheat", "Player::Create: Hair is good");
 	
 	if (!IsSectionValid(race, class_, gender, CharBaseSectionVariation::FacialHair, facialHairID, hairColor, create))
         if (sDB2Manager.HasCharSections(race, gender, CharBaseSectionVariation::FacialHair) || !sDB2Manager.HasCharacterFacialHairStyle(race, gender, facialHairID))
             return false;
 
-	TC_LOG_ERROR("entities.player.cheat", "Player::Create: Account %u (%u) - FacialHair is good");
+	TC_LOG_ERROR("entities.player.cheat", "Player::Create: FacialHair is good");
 	
 	if (!IsSectionValid(race, class_, gender, CharBaseSectionVariation::CustomDisplay1, customDisplay[0], 0, create))
         return false;
 
-	TC_LOG_ERROR("entities.player.cheat", "Player::Create: Account %u (%u) - CustomDisplay1 is good");
+	TC_LOG_ERROR("entities.player.cheat", "Player::Create: CustomDisplay1 is good");
 
 	if (!IsSectionValid(race, class_, gender, CharBaseSectionVariation::CustomDisplay2, customDisplay[1], 0, create))
         return false;
 
-	TC_LOG_ERROR("entities.player.cheat", "Player::Create: Account %u (%u) - CustomDisplay2 is good");
+	TC_LOG_ERROR("entities.player.cheat", "Player::Create: CustomDisplay2 is good");
 	
 	if (!IsSectionValid(race, class_, gender, CharBaseSectionVariation::CustomDisplay3, customDisplay[2], 0, create))
         return false;
 
-	TC_LOG_ERROR("entities.player.cheat", "Player::Create: Account %u (%u) - CustomDisplay3 is good");
+	TC_LOG_ERROR("entities.player.cheat", "Player::Create: CustomDisplay3 is good");
 	
 	return true;
 }
