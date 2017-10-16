@@ -1463,14 +1463,14 @@ void WorldSession::HandleAlterAppearance(WorldPackets::Character::AlterApperance
         customDisplay[i] = bs_customDisplay ? bs_customDisplay->Data : 0;
     }
 
-    if (!Player::ValidateAppearance(_player->getRace(), _player->getClass(), _player->GetByteValue(PLAYER_BYTES_3, PLAYER_BYTES_3_OFFSET_GENDER),
+    /*if (!Player::ValidateAppearance(_player->getRace(), _player->getClass(), _player->GetByteValue(PLAYER_BYTES_3, PLAYER_BYTES_3_OFFSET_GENDER),
         bs_hair->Data,
         packet.NewHairColor,
         bs_face ? bs_face->Data : _player->GetByteValue(PLAYER_BYTES, PLAYER_BYTES_OFFSET_FACE_ID),
         bs_facialHair->Data,
         bs_skinColor ? bs_skinColor->Data : _player->GetByteValue(PLAYER_BYTES, PLAYER_BYTES_OFFSET_SKIN_ID),
         customDisplay))
-        //return;
+        return*/;
 
     GameObject* go = _player->FindNearestGameObjectOfType(GAMEOBJECT_TYPE_BARBER_CHAIR, 5.0f);
     if (!go)
